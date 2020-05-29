@@ -1,0 +1,758 @@
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "メイリオ", Meiryo,
+    "ＭＳ Ｐゴシック", "MS PGothic" "ＭＳ ゴシック", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+  width: 100%;
+}
+
+header {
+  color: rgb(255, 255, 255);
+  background-color: rgb(220, 96, 3);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-title {
+  flex-shrink: 0;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.head-title h1 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.head-title p {
+  opacity: 0.8;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+header li {
+  font-size: 20px;
+}
+
+.head-select {
+  width: 750px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.head-select a {
+  transition: font-size 0.1s;
+}
+
+.head-select a:hover {
+  font-size: 25px;
+}
+
+.head-select a:active {
+  opacity: 0.3;
+}
+
+.SNS {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2%;
+}
+
+header span {
+  font-size: 50px;
+  transition: color 0.2s;
+}
+
+header span:hover {
+  color: blueviolet;
+}
+
+header span:active {
+  opacity: 0.3;
+}
+
+.Contact-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 15%;
+  left: 28%;
+  width: 45%;
+  height: auto;
+  background-color: #e6ecf0;
+  text-align: center;
+  padding: 2% 4%;
+  border-radius: 5px;
+}
+
+.fa-times {
+  position: relative;
+  top: 0;
+  left: 53%;
+  cursor: pointer;
+}
+
+.form-content {
+  width: 100%;
+  padding: 2px 0;
+  border: 1px solid #d0d5d8;
+}
+
+#form-comment {
+  width: 100%;
+  height: 150px;
+}
+
+.modal input,
+.modal textarea {
+  border-radius: 5px;
+}
+
+.error-message {
+  color: #f51414;
+  height: 18px;
+}
+
+#submit-btn {
+  display: inline-block;
+  width: 40%;
+  padding: 2px 3%;
+  color: white;
+  background-color: orange;
+  border: 1px solid orange;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  opacity: 0.7;
+}
+
+.top-wrapper {
+  padding-top: 80px;
+  background-color: rgb(252, 233, 220);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profile {
+  background-color: rgb(252, 233, 220);
+}
+
+.profile-title span {
+  position: relative;
+  top: -75px;
+  display: block;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 45px;
+}
+
+.profile-title {
+  background: -webkit-linear-gradient(
+    left,
+    rgba(253, 244, 3, 0.7) 50%,
+    transparent 50%
+  );
+  background: -moz-linear-gradient(
+    left,
+    rgba(253, 244, 3, 0.7) 50%,
+    transparent 50%
+  );
+  background: linear-gradient(left rgba(253, 244, 3, 0.7) 50%, transparent 50%);
+  background-size: 200% 0.8em;
+  background-position: 100% 0.5em;
+  background-repeat: no-repeat;
+  transition: 2s;
+}
+
+.profile-title.active {
+  background-position: 0% 0.5em;
+}
+.profile-content {
+  margin: 4% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 100%;
+  margin: 0 3%;
+  width: 25vw;
+}
+
+.profile-name {
+  width: 45%;
+  text-align: center;
+  border: 3px double orange;
+  background-color: rgba(220, 96, 3, 0.3);
+}
+
+.profile-name h3 {
+  font-size: 30px;
+  margin: 2% 0;
+}
+
+.top-wrapper p {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+li,
+.life-contents {
+  transform: translate3d(0, -30px, 0);
+  transition: 1s;
+  opacity: 0;
+}
+li.animated,
+.life-contents.animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+.strengths {
+  background-color: rgb(252, 233, 220);
+}
+
+.strengths-title span {
+  position: relative;
+  top: -75px;
+  display: block;
+}
+
+.strengths-title {
+  text-align: right;
+  margin-bottom: 30px;
+  font-size: 45px;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(254, 3, 3) 50%,
+    transparent 50%
+  );
+  background: -moz-linear-gradient(left, rgb(254, 3, 3) 50%, transparent 50%);
+  background: linear-gradient(left, rgb(254, 3, 3) 50%, transparent 50%);
+  background-size: 200% 0.8em;
+  background-position: -100% 0.5em;
+  background-repeat: no-repeat;
+  transition: 2s;
+}
+.strengths-title.active {
+  background-position: 0% 0.5em;
+}
+
+.strengths ul {
+  display: flex;
+  margin: 5% 0;
+}
+
+.strengths li {
+  padding: 2% 3% 0 3%;
+  border: 3px double orange;
+  border-radius: 10%;
+  width: 33%;
+  height: auto;
+  margin-left: 2%;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+li span {
+  background: linear-gradient(transparent 60%, rgba(10, 199, 247, 0.7) 70%);
+  font-size: 22px;
+}
+
+.weaknesses-title {
+  text-align: left;
+  margin-bottom: 30px;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(5, 5, 231) 50%,
+    transparent 50%
+  );
+  background: -moz-linear-gradient(left, rgb(5, 5, 231) 50%, transparent 50%);
+  background: linear-gradient(left rgb(5, 5, 231) 50%, transparent 50%);
+  background-size: 200% 0.8em;
+  background-position: 100% 0.5em;
+  background-repeat: no-repeat;
+  transition: 2s;
+}
+.weaknesses-title.active {
+  background-position: 0% 0.5em;
+}
+
+.weaknesses-title span {
+  position: relative;
+  top: -75px;
+  display: block;
+}
+
+.weaknesses li {
+  padding: 1% 3% 3%;
+  border: 3px double blue;
+  border-radius: 10%;
+  width: 33%;
+  height: auto;
+  margin-left: 2%;
+}
+
+.weaknesses {
+  background-color: rgb(252, 233, 220);
+}
+
+.weaknesses ul {
+  display: flex;
+  margin: 5% 0;
+}
+
+.improve {
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 45px;
+}
+
+.improve-class ul {
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.improve i {
+  margin-right: 20px;
+  font-size: 150px;
+}
+
+.improve-class li {
+  padding: 4%;
+  border: 3px double yellow;
+  border-radius: 100%;
+  width: 33%;
+  height: auto;
+  margin-left: 2%;
+}
+
+.life-class {
+  background-color: rgb(252, 233, 220);
+}
+
+.life-title {
+  text-align: right;
+  margin-bottom: 30px;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(4, 254, 168) 50%,
+    transparent 50%
+  );
+  background: -moz-linear-gradient(left, rgb(4, 254, 168) 50%, transparent 50%);
+  background: linear-gradient(left rgb(4, 254, 168) 50%, transparent 50%);
+  background-size: 200% 0.8em;
+  background-position: -100% 0.5em;
+  background-repeat: no-repeat;
+  transition: 2s;
+}
+
+.life-title.active {
+  background-position: 0% 0.5em;
+}
+
+.life-title span {
+  position: relative;
+  top: -75px;
+  display: block;
+}
+
+.life-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+}
+
+.life-contents {
+  width: 70%;
+  padding: 2%;
+  background-color: rgb(198, 231, 207);
+  border-left: 8px solid rgb(4, 254, 168);
+  text-align: center;
+  margin-right: 5%;
+}
+
+.life-contents span {
+  background: linear-gradient(transparent 60%, rgba(10, 199, 247, 0.7) 70%);
+  font-size: 20px;
+}
+
+.life-img {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ore2 {
+  width: 70%;
+  border-radius: 5%;
+  margin-bottom: 10%;
+}
+
+.daikou {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.Contact-title {
+  text-align: left;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(255, 165, 0) 50%,
+    transparent 50%
+  );
+  background: -moz-linear-gradient(left, rgb(255, 165, 0) 50%, transparent 50%);
+  background: linear-gradient(left, rgb(255, 165, 0) 50%, transparent 50%);
+  background-size: 200% 0.8em;
+  background-position: 100% 0.5em;
+  background-repeat: no-repeat;
+  transition: 2s;
+  margin-bottom: 1%;
+}
+
+.Contact-title span {
+  position: relative;
+  top: -75px;
+  display: block;
+}
+
+.Contact-title.active {
+  background-position: 0% 0.5em;
+}
+
+.Contact-content {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.Contact-content p {
+  background-color: orange;
+  color: white;
+  display: inline-block;
+  font-size: 30px;
+  padding: 2% 6%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 3%;
+}
+
+.Contact-content p:hover {
+  background-color: white;
+  color: orange;
+  transform: scale(1.1);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+}
+
+.Contact-content p:active {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 12px gray inset;
+}
+
+.Sns-class {
+  background-color: rgb(252, 233, 220);
+  height: 340px;
+}
+
+.Sns-title {
+  text-align: right;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(252, 7, 243) 50%,
+    transparent 50%
+  );
+  background: -moz-linear-gradient(left, rgb(252, 7, 243) 50%, transparent 50%);
+  background: linear-gradient(left rgb(252, 7, 243) 50%, transparent 50%);
+  background-size: 200% 0.8em;
+  background-position: -100% 0.5em;
+  background-repeat: no-repeat;
+  transition: 2s;
+  margin-bottom: 1%;
+}
+.Sns-title.active {
+  background-position: 0% 0.5em;
+}
+.Sns-class h3 {
+  font-size: 36px;
+  margin-bottom: 2%;
+}
+
+.Sns-title span {
+  position: relative;
+  top: -75px;
+  display: block;
+}
+
+.btn-wrapper {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.btn-wrapper a {
+  padding: 2% 2.2%;
+  border-radius: 15%;
+  font-size: 60px;
+  transition: all 0.2s;
+}
+
+.btn-wrapper a:hover {
+  box-shadow: 0px 0px 12px 3px gray;
+  transform: scale(1.2);
+}
+
+.btn-wrapper a:active {
+  transform: scale(0.9);
+  box-shadow: 10px 0px 12px -8px #333333 inset;
+}
+
+.btn-wrapper .fa-twitter {
+  background-color: rgb(85, 172, 238);
+  padding: 2%;
+}
+.btn-wrapper .fa-facebook {
+  background-color: rgb(49, 80, 150);
+}
+.btn-wrapper .fa-instagram {
+  background-color: rgb(225, 48, 108);
+}
+footer {
+  text-align: center;
+  color: white;
+  background-color: rgb(248, 159, 19);
+}
+
+footer h4 {
+  padding-top: 10px;
+  font-size: 42px;
+  line-height: 42px;
+}
+
+footer p {
+  opacity: 0.8;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+@media (max-width: 670px) {
+  header {
+    height: 60px;
+  }
+  .head-title {
+    margin: 0 5%;
+  }
+  .head-title h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .head-title p {
+    font-size: 8px;
+    line-height: 8px;
+  }
+  .SNS {
+    width: 120px;
+  }
+  header span {
+    font-size: 30px;
+  }
+  header span:hover {
+    color: white;
+  }
+
+  header span:active {
+    opacity: 1;
+  }
+  header span {
+    transition: none;
+  }
+
+  .top-wrapper p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .profile-title,
+  .strengths-title,
+  .weaknesses-title,
+  .life-title,
+  .Contact-title,
+  .Sns-title {
+    font-size: 22px;
+  }
+
+  .profile-name h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  li span {
+    font-size: 17px;
+  }
+  .improve i {
+    font-size: 120px;
+  }
+  .Sns-class {
+    height: 230px;
+  }
+  .Sns-class h3 {
+    font-size: 18px;
+  }
+  footer h4 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .btn-wrapper {
+    flex-wrap: wrap;
+  }
+  .btn-wrapper a {
+    transition: none;
+    font-size: 35px;
+    margin: 6% 7% 0;
+  }
+  .btn-wrapper a:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  .btn-wrapper a:active {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .head-select {
+    display: none;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .profile img {
+    width: 55%;
+    margin: 5%;
+  }
+  .profile-name {
+    width: 100%;
+  }
+  .strengths ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .strengths li {
+    width: 95%;
+    padding: 3% 7% 7% 7%;
+    margin-bottom: 10%;
+  }
+  .weaknesses ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .weaknesses li {
+    width: 95%;
+    padding: 3% 7% 7% 7%;
+    margin-bottom: 10%;
+  }
+  .improve {
+    font-size: 30px;
+  }
+  .improve-class ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .improve-class li {
+    width: 95%;
+    padding: 12%;
+    margin-bottom: 10%;
+  }
+  .life-wrapper {
+    flex-direction: column;
+  }
+  .life-contents {
+    width: 100%;
+    margin-right: 0;
+    order: 2;
+  }
+  .life-img {
+    width: 100%;
+    flex-direction: row;
+    order: 1;
+    margin-bottom: 5%;
+  }
+  .ore2 {
+    width: 30%;
+    height: auto;
+    margin: 0 5% 0 0;
+    border-radius: 100%;
+  }
+  .daikou {
+    width: 55%;
+    height: auto;
+    border-radius: 100%;
+  }
+}

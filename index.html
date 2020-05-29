@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>逆求人～平口　叶太～</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="javascript" src="script.js'"></script>
+</head>
+
+<div class="Contact-modal-wrapper" id="Contact-modal">
+  <div class="modal">
+    <div class="close-modal">
+      <i class="fas fa-times"></i>
+    </div>
+    <div id="Contact-form">
+      <h3>Let's contact!!</h3>
+      <form action="#">
+        <!-- djangoのwidget_tweaksを用いてクラスを追加 -->
+        <p id="error-name" class="error-message"></p>
+        <label for="form-name">お名前</label>
+        <input class="form-content" id="form-name" type="text" name="your-name" />
+        <p id="error-mail" class="error-message"></p>
+        <label for="form-mail">メールアドレス</label>
+        <input class="form-content" id="form-mail" type="email" name="your-mail" />
+        <p id="error-subject" class="error-message"></p>
+        <label for="form-subject">題名</label>
+        <input class="form-content" id="form-subject" type="text" name="your-subject" />
+        <p id="error-comment" class="error-message"></p>
+        <label for="form-comment">内容</label>
+        <textarea id="form-comment" name="your-comment"></textarea>
+
+        <input id="submit-btn" type="submit" value="送信" />
+        <p><small>※送信完了後は、このモーダルがなくなります</small></p>
+        <p><small>※以上はすべて必須項目です</small></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<body>
+  <header>
+    <div class="head-title">
+      <h1>逆求人</h1>
+      <p>By Kanata Hiraguchi</p>
+    </div>
+    <ul class="head-select">
+      <li>
+        <a href="#Profile"><i class="far fa-hand-point-right"></i>自己紹介</a>
+      </li>
+      <li>
+        <a href="#Strengths"><i class="far fa-hand-point-right"></i>長所</a>
+      </li>
+      <li class="wrap-point">
+        <a href="#Weaknesses"><i class="far fa-hand-point-right"></i>短所</a>
+      </li>
+      <li>
+        <a href="#Life"><i class="far fa-hand-point-right"></i>人生の歩み</a>
+      </li>
+      <li>
+        <a href="#Contact"><i class="far fa-hand-point-right"></i>コンタクト</a>
+      </li>
+      <li>
+        <a href="#Sns"><i class="far fa-hand-point-right"></i>SNS</a>
+      </li>
+    </ul>
+    <div class="btn SNS">
+      <a href="https://twitter.com/baskekanata0204" target="_brank"><span class="fab fa-twitter-square"></span></a>
+      <a href="https://www.facebook.com/profile.php?id=100023200550346" target="_brank"><span
+          class="fab fa-facebook-square"></span></a>
+      <a href="https://www.instagram.com/pingkouxietai/?hl=ja" target="_brank"><span
+          class="fab fa-instagram-square"></span></a>
+    </div>
+  </header>
+  <div class="top-wrapper">
+    <div class="container">
+      <div class="profile">
+        <h2 class="profile-title">
+          <span id="Profile"></span>
+          Self Introduction
+        </h2>
+        <div class="profile-content">
+          <img src="ore.jpg" />
+          <div class="profile-name">
+            <h3>平口 叶太</h3>
+            <p>在学:大阪工業大学（情報科学部 情報メディア学科）</p>
+            <p>生年月日:2000年2月4日</p>
+            <p>趣味:バスケ、勉強？</p>
+            <p>
+              夢:世界中の人々の命を救えるようなプログラムを作り、世界有数のプログラマとなること
+            </p>
+            <p>
+              座右の銘:Have the courage to follow your heart and intuition.<br />(あなたの心と直感に従う勇気を持つこと)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="strengths">
+        <h2 class="strengths-title">
+          <span id="Strengths"></span>
+          Strengths
+        </h2>
+        <ul>
+          <li>
+            <h3><i class="fas fa-basketball-ball fa-spin"></i> 温厚な性格</h3>
+            <p>
+              自分は<span>人を嫌わないことを心掛けています。</span>人を嫌うとその人を思うだけで、嫌な感情になりますよね？それって自分は本当に無駄な感情だと思っています。どれほど「あいつ嫌い」、「うっとうしい」と嫌悪感を抱いても、他者は変わらない。自分はそのような考え方をしているので、<span>人間関係に困ったことはあまりありません！</span>
+            </p>
+          </li>
+          <li>
+            <h3>
+              <i class="fas fa-basketball-ball fa-spin"></i> ポジティブ思考
+            </h3>
+            <p>
+              どれだけ躓いても、失敗しても、全て自分の成長につながると解釈するので、<span>スーパーポジティブ</span>です。失敗しないと成長できないと強く思っている為、むしろ失敗をたくさんしたいと思っています。この時、<span>その失敗は「なぜ」おきたのか、それを「どのように」改善するかという姿勢が大事</span>だと考えています。もちろん、わざと失敗はしないです。
+            </p>
+          </li>
+          <li>
+            <h3><i class="fas fa-basketball-ball fa-spin"></i> 意志の強さ</h3>
+            <p>
+              将来の夢と少し関係します。自分はなんとしてでもこの夢を叶えたいと思っています。この夢が叶わないと確定されたのなら、今死んでもいい。逆に叶ったのなら、もうこの人生に悔いはない。本気でそう思っています。その強い夢への思いが、意志の強さに反映しているのでしょう。<span>どんな物事にも全力でとりかかります!</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="weaknesses">
+        <h2 class="weaknesses-title">
+          <span id="Weaknesses"></span>
+          Weaknesses
+        </h2>
+        <ul>
+          <li>
+            <h3><i class="fas fa-basketball-ball fa-spin"></i> 言語化能力</h3>
+            <p>
+              <span>日本語が下手です。</span>それもかなりの。何かを伝えたくて、伝えた後には言い残したことがあり、何回も後悔したことがあります。これは社会に出ることを想像すると大問題です。
+            </p>
+          </li>
+          <li>
+            <h3><i class="fas fa-basketball-ball fa-spin"></i> 口だけ状態</h3>
+            <p>
+              自分は現状、結果は残しておらず、口だけです。これだけ大スケールの夢を抱えているのに、何も成果物はありません。そのため、<span>説得力に欠けます。</span>これも、かなり辛いところです。
+            </p>
+          </li>
+          <li>
+            <h3>
+              <i class="fas fa-basketball-ball fa-spin"></i> 相づちうちがち
+            </h3>
+            <p>
+              雰囲気のよっては、すぐにうなづいてしまうという癖があります。なので、<span>分からないときに、はっきりと分からないと言えない</span>です。厄介な癖だと自分でも思っています。
+            </p>
+          </li>
+        </ul>
+        <h2 class="improve">
+          <i class="far fa-hand-point-down"></i>Improve!!
+        </h2>
+      </div>
+      <div class="improve-class">
+        <ul>
+          <li>
+            <h3>
+              <i class="fas fa-basketball-ball fa-spin"></i> メモを取る！
+            </h3>
+            <p>
+              暇なとき、もし、<span>こんな質問がきたら。と想像し、その質問をメモに書いておきます。</span>そして、その答えを真剣に考え、書いておくことで、もし同じ質問が来たとき、言い残すことがあまりない状態になります。
+            </p>
+          </li>
+          <li>
+            <h3><i class="fas fa-basketball-ball fa-spin"></i> 行動する!</h3>
+            <p>
+              行動しなければ、現実世界に影響を及ぼさないこと、アウトプットをたくさんすることで、結果は生まれるということを深く理解することで、改善できる。<span>インプットだけだと意味がない</span>ことを知る！
+            </p>
+          </li>
+          <li>
+            <h3>
+              <i class="fas fa-basketball-ball fa-spin"></i> 癖をつける！
+            </h3>
+            <p>
+              分からないときに、<span>「分からない」と言わないと、お互い良い結果に結びつかない</span>ということを理解し、「分からない」という言葉を癖づけるぐらい発言し続けると、改善できると考えています。
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="life-class">
+        <h2 class="life-title">
+          <span id="Life"></span>
+          Walk of Life
+        </h2>
+        <div class="life-wrapper">
+          <div class="life-contents">
+            <p>
+              高校二年:部活がいそがしく、暇なときはゲームなどをしている。<br />なんともない生活を送る。
+            </p>
+            <p>↓</p>
+            <p>
+              高校三年：心から尊敬できる同級生と出会い、夢のきっかけとなったアクシデントが起きる。<br />自分が180度かわる<span>人生のターニングポイント</span>
+            </p>
+            <p>↓</p>
+            <p>指定校推薦で大学に入学</p>
+            <p>↓</p>
+            <p>
+              大学一年：とりあえず目標を首席とし、とりあえず勉強に力を入れる。<br />しかし、このままでは夢には程遠いと感じる。
+            </p>
+            <p>↓</p>
+            <p>
+              大学二年：行動する大切さを知る。首席は諦め、昨年より勉強にこだわらなくなる。<br />勉強より<span>行動にフォーカス</span>するようになる。
+            </p>
+            <p>↓</p>
+            <p>現在<br /><span>プログラミング知識を尖らせる準備中</span></p>
+          </div>
+          <div class="life-img">
+            <img class="ore2" src="ore2.jpg" />
+            <img class="daikou" src="daikou.jpg" /> 
+          </div>
+        </div>
+      </div>
+      <div class="Contact-class">
+        <h2 class="Contact-title">
+          <span id="Contact"></span>
+          Contact
+        </h2>
+        <div class="Contact-content">
+          <h3>少しでも興味を持った方は連絡を！！</h3>
+          <p id="Contact-show">Let's contact!</p>
+        </div>
+      </div>
+      <div class="Sns-class">
+        <h2 class="Sns-title">
+          <span id="Sns"></span>
+          SNS
+        </h2>
+        <div class="btn-wrapper">
+          <a class="fab fa-twitter" href="https://twitter.com/baskekanata0204" target="_brank"></a>
+          <a class="fab fa-facebook" href="https://www.facebook.com/profile.php?id=100023200550346" target="_brank"></a>
+          <a class="fab fa-instagram" href="https://www.instagram.com/pingkouxietai/?hl=ja" target="_brank"></a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h4>逆求人サイト</h4>
+      <p>By Kanata Hiraguchi</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
